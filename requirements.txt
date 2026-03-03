@@ -3,3 +3,5 @@ uvicorn
 scikit-learn
 numpy
 pandas
+nltk
+joblib

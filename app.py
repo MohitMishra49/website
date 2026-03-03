@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import pickle
 import string
 import nltk
+nltk.data.path.append('/opt/render/project/src/nltk_data')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
@@ -17,8 +18,6 @@ app.add_middleware(
 )
 
 # Download once (important for Render)
-nltk.download('punkt')
-nltk.download('stopwords')
 
 ps = PorterStemmer()
 
